@@ -1,47 +1,59 @@
-import Button from '@restart/ui/esm/Button';
-import React from 'react';
-
+import Button from "@restart/ui/esm/Button";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 const Footer = () => {
-    return (
-        <div className="container-fluid p-5 bg-dark text-white">
-            <div className="row">
-                <div className="col-lg-3 col-sm-12">
-                    <h5><img src="https://i.ibb.co/hdfwfCr/Imriaz-Auto-logo.png" width="100"
-                        height="100"
-                        className="d-inline-block align-top " alt='' /><br />Motor Home</h5>
-                    <p>Your Trusted Bike Shop</p>
-                    <p> about@imriazauto.com</p>
-                    <p> +8801521227844</p>
-                    <p> Mirpur-10, Dhaka</p>
-                </div>
-                <div className="col-lg-3 col-sm-12">
-                    <h5>Our Recent Updated Bike</h5>
-                    <br />
-                    <p>Suzuki Hayabusa</p>
-                    <p>BMW F 900 R</p>
-                    <p>Kawasaki Ninja H2</p>
-                    <p>TVS Apache RR 310</p>
-                </div>
-                <div className="col-lg-3 col-sm-12">
-                    <h5>Subscribe to our Newsletter</h5>
-                    <p>Subscribe our newsletter for notify update of our future tour program and choose your best one.</p>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <br />
-                    <br />
-                    <Button variant="outline-info">Subcribe</Button>
-                </div>
-                <div className="col-lg-3 col-sm-12">
-                    <h5>Our Instagram</h5>
-                    <h5>Our Facebook</h5>
-                    <p>Motor Home is a renowned and Trusteed Bike Shop, successfully over 2 years running. Now it's time to introduce our website Motor Home.</p>
-                </div>
-            </div>
-            <div>
-                <small>Powered by @ Imriaz 2021</small>
-            </div>
+  return (
+    <div className="container-fluid p-5 bg-dark text-start text-white">
+      <div className="row">
+        <div className="col-lg-3 col-sm-12">
+          <h5>
+            <img
+              src="https://i.ibb.co/G77ZRsF/car-hub.png"
+              width="150"
+              height="100"
+              className="d-inline-block align-top "
+              alt=""
+              style={{ borderRadius: "20%" }}
+            />
+            <br />
+          </h5>
+          <p>Your Trusted Car Rental Site</p>
         </div>
-    );
+        <div className="col-lg-3 footer-link col-sm-12">
+          <h5>Quick Link</h5>
+          <Link to="/home">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/contactUs">Contact Us</Link>
+        </div>
+        <div className="col-lg-3 col-sm-12">
+          <h5>Subscribe to our Newsletter</h5>
+          <p>
+            Subscribe our newsletter for notify update of our future tour
+            program and choose your best one.
+          </p>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <br />
+          <br />
+          <Button variant="outline-info">Subcribe</Button>
+        </div>
+        <div className="col-lg-3 col-sm-12">
+          <h5>Our Instagram</h5>
+          <h5>Our Facebook</h5>
+          <p>
+            carHub is a renowned and Trusteed Car Rental site, successfully over
+            2 years running. Now it's time to introduce our website car
+            <span className="text-info">Hub</span>.
+          </p>
+        </div>
+      </div>
+      <div>
+        <small>Powered by @ CSE18</small>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;

@@ -1,0 +1,6 @@
+.footer-link a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    line-height: 2rem;
+}

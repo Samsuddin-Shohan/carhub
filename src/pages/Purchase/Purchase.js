@@ -33,7 +33,7 @@ const Purchase = () => {
   const onSubmit = (data) => {
     data.email = user?.email;
     data.status = "Pending";
-    fetch("https://warm-hollows-05894.herokuapp.com/orders", {
+    fetch("http://localhost:5000/orders", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

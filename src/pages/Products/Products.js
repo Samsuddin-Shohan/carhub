@@ -17,12 +17,14 @@ const Products = () => {
   return (
     <>
       <div>
-        <h2 className="text-primary mt-5">Our Products</h2>
+        <h2 className="text-info mt-5">Our Cars</h2>
       </div>
-      <div className="products-container" id="products">
-        {products.map((item) => (
-          <Product key={item._id} item={item}></Product>
-        ))}
+      <div className="container-fluid">
+        <div className="products-container" id="products">
+          {products.map((item) => (
+            <Product key={item._id} item={item}></Product>
+          ))}
+        </div>
       </div>
     </>
   );

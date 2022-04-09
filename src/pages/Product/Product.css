@@ -8,9 +8,10 @@
 
 .card{
     width: 400px;
-    height: 670px;
+    height: 500px;
     border: 1px solid lightblue;
     border-radius: 10px;
+    padding-top: 20px;
     
 }
 
