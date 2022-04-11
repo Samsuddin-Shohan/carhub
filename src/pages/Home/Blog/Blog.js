@@ -8,7 +8,7 @@ const Blog = () => {
         <h1 className="text-center text-info">Contributor</h1>
       </div>
       <div className="blogs-section">
-        <div class="blog-card bg-light p-4 rounded shadow-lg bg-light p-4 rounded shadow-lg">
+        <div class="blog-card bg-light p-4 rounded shadow-lg ">
           <img
             src="https://i.ibb.co/nP48MK3/Babar.jpg"
             class="blog-image"
@@ -18,7 +18,7 @@ const Blog = () => {
           <h4 class="blog-overview ">Back-end Developer</h4>
         </div>
 
-        <div class="blog-card bg-light p-4 rounded shadow-lg bg-light p-4 rounded shadow-lg">
+        <div class="blog-card bg-light p-4 rounded shadow-lg">
           <img
             src="https://i.ibb.co/Hhcsc2V/sabbir.jpg"
             class="blog-image"
