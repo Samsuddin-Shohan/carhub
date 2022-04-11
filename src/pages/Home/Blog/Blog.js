@@ -13,7 +13,7 @@ const Blog = () => {
             alt=""
           />
           <h3 className="blog-title">Md. Nahid Sultan</h3>
-          <h4 class="blog-overview">Assistant Professor</h4>
+          <h4 class="blog-overview">Associate Professor</h4>
           <h4 class="blog-overview text-primary">
             Dept. of Computer Science & Engineering
           </h4>
