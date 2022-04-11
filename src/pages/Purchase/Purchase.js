@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import useFirebase from "../../hooks/useFirebase";
 import Footer from "../Home/Shared/Footer/Footer";
 import Navigation from "../Home/Shared/Navigation/Navigation";
@@ -58,7 +58,7 @@ const Purchase = () => {
             <div class="card-body">
               <h5 class="card-title text-info">{product.Name}</h5>
               <p class="card-text">{product.description}</p>
-              <h3 class="card-text text-info">${product.price}</h3>
+              <h3 class="card-text text-info">BDT {product.price}</h3>
             </div>
           </div>
 
@@ -72,28 +72,24 @@ const Purchase = () => {
                 <div className="login-form">
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <input
-                      defaultValue={product?.Name}
                       {...register("Name", { required: true })}
                       placeholder="Products Name"
                       className="p-2 m-2 w-100"
                     />
                     <br />
                     <input
-                      defaultValue={user?.displayName}
                       {...register("name", { required: true })}
                       placeholder="Name"
                       className="p-2 m-2 w-100"
                     />
                     <br />
                     <input
-                      defaultValue={user?.email}
                       {...register("email", { required: true })}
                       placeholder="Email"
                       className="p-2 m-2 w-100"
                     />
                     <br />
                     <input
-                      defaultValue={product?.price}
                       {...register("price", { required: true })}
                       placeholder="Price"
                       className="p-2 m-2 w-100"
