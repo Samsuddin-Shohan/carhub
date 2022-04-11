@@ -10,3 +10,22 @@
 .item-part{
     margin-top: 150px ;
 }
+
+.login-form input{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.login-form input:focus-visible{
+    border: 1px solid #ff0000;
+    outline: 0;
+}
+.login-form input:focus{
+    border: 1px solid rgba(255, 0, 0, 0.53);
+}
+.package-box{
+    border-radius: 10px;
+}
+.review-section .card{
+    height: auto !important;
+    margin-top: 80px;
+}

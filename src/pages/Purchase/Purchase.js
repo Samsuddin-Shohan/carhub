@@ -51,9 +51,12 @@ const Purchase = () => {
   return (
     <>
       <Navigation />
-      <div className="review-section">
-        <div className="row">
-          <div class="card col-lg-6 col-sm-12 mb-5 mt-5 item-part">
+      <div className="review-section m-auto container">
+        <div className="row py-5 justify-content-center">
+          <h1 className="mt-5 text-center text-info">
+            Please Provide your Information for Booking
+          </h1>
+          <div class="card col-lg-6 col-sm-12 mb-5 mt-5 item-part px-5">
             <img src={product.img} class="details-image" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-info">{product.Name}</h5>
@@ -64,58 +67,55 @@ const Purchase = () => {
 
           {/* Form Start here */}
           <div className="col-lg-6 col-sm-12">
-            <h1 className="mt-5 text-center text-info">
-              Please Provide your Information for Booking
-            </h1>
-            <div className="login-box w-25 m-auto mt-5">
-              <div className="package-box border border d-flex justify-content-center align-items-center">
-                <div className="login-form">
+            <div className="login-box w-75 m-auto mt-5">
+              <div className="package-box border border d-flex justify-content-center align-items-center py-3">
+                <div className="login-form w-100 overflow-hidden px-3">
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <input
                       defaultValue={product?.Name}
                       {...register("Name", { required: true })}
                       placeholder="Products Name"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       defaultValue={user?.displayName}
                       {...register("name", { required: true })}
                       placeholder="Name"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       defaultValue={user?.email}
                       {...register("email", { required: true })}
                       placeholder="Email"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       defaultValue={product?.price}
                       {...register("price", { required: true })}
                       placeholder="Price"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       {...register("date")}
                       placeholder="Date"
                       type="date"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       {...register("address", { required: true })}
                       placeholder="Address"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
                     <input
                       {...register("phone", { required: true })}
                       placeholder="Phone Number"
-                      className="p-2 m-2 w-100"
+                      className="p-2 my-2 w-100"
                     />
                     <br />
 

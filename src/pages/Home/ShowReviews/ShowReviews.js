@@ -17,7 +17,7 @@ const ShowReviews = () => {
   return (
     <>
       <div>
-        <h2 className="text-info mt-5">Review</h2>
+        <h2 className="text-info my-5">Review</h2>
       </div>
       <div className="products-container" id="products">
         {products.map((item) => (

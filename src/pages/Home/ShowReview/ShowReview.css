@@ -1,11 +1,11 @@
 .card-review{
     width: 400px;
-    height: 300px;
     border: 1px solid lightblue;
     border-radius: 15px;
     background-color:rgb(85, 98, 100);
     color: white;
     padding: 20px;
+    min-height: 250px;
 }
 
 .card-review:hover{

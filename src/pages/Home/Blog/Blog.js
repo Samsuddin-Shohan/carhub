@@ -4,8 +4,8 @@ import "./Blog.css";
 const Blog = () => {
   return (
     <div className="container-xl">
-      <div className="blog-text m-5">
-        <h1 className="text-center text-info">Contributor</h1>
+      <div className="blog-text">
+        <h1 className="text-center my-4 text-info">Contributor</h1>
       </div>
       <div className="blogs-section">
         <div class="blog-card bg-light p-4 rounded shadow-lg ">

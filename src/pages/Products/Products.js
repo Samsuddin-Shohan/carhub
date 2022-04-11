@@ -17,7 +17,7 @@ const Products = () => {
   return (
     <>
       <div>
-        <h2 className="text-info mt-5">Our Cars</h2>
+        <h2 className="text-info mt-5 mb-5">Our Cars</h2>
       </div>
       <div className="container-fluid">
         <div className="products-container" id="products">

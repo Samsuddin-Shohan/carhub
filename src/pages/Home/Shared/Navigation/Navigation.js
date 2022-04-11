@@ -15,15 +15,7 @@ const Navigation = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className="nav-color" position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <h3 className="logo-title">Car Hub</h3>
           <Typography
             variant="h6"
             component="div"
