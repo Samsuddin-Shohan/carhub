@@ -64,10 +64,10 @@ const Login = () => {
                             {authError && <Alert severity="error">{authError}</Alert>}
                         </form>
                         <p>------------------------</p>
-                        <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
+                        <Button onClick={handleGoogleSignIn} variant="contained" className='mb-3'>Google Sign In</Button>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <img style={{ width: '100%' }} src="https://i.ibb.co/2s8mR8K/amazing-motorbike-with-stencil-banner-for-copy-space.jpg" alt="" />
+                        <img className = 'mt-5' style={{ width: '100%' }} src="https://us.123rf.com/450wm/mindd/mindd1812/mindd181200001/112824385-detailed-vector-draw-of-a-flat-sport-car-with-black-stroke-option-for-custom-able-color-for-kids-dra.jpg?ver=6" alt="" />
                     </Grid>
                 </Grid>
             </Container>

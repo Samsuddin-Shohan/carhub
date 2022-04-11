@@ -1,4 +1,4 @@
-import Button from "@restart/ui/esm/Button";
+// import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -37,7 +37,7 @@ const Footer = () => {
           <input type="email" placeholder="Email" />
           <br />
           <br />
-          <Button variant="outline-info">Subcribe</Button>
+          {/* <Button variant="outline-info">Subcribe</Button> */}
         </div>
         <div className="col-lg-3 col-sm-12">
           <h5>Our Instagram</h5>

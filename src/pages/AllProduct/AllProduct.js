@@ -12,7 +12,7 @@ const AllProduct = ({ item }) => {
           <div class="card-body">
             <h5 class="card-title">{Name}</h5>
             <p class="card-text">{description}</p>
-            <h3>{price}$ </h3>
+            <h3>BDT {price}</h3>
             <Link to={`/purchase/${_id}`}>
               <button type="button" class="btn btn-outline-info m-2">
                 Rent Now
